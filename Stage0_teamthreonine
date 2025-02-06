@@ -1,1 +1,11 @@
-
+team_threonine = {
+    "Aparna Padmanabhan": {
+        "Slack_username": "Aparna",
+        "Email": "aparna2118@gmail.com",
+        "Hobby": "Badminton",
+        "Country": "India",
+        "Discipline": "Molecular biology",
+        "Prg_lang": "Python"
+    }
+  }
+print(team_threonine)
