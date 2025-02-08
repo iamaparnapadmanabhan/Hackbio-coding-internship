@@ -1,11 +1,43 @@
 team_threonine = {
     "Aparna Padmanabhan": {
-        "Slack_username": "Aparna",
-        "Email": "aparna2118@gmail.com",
-        "Hobby": "Badminton",
-        "Country": "India",
-        "Discipline": "Molecular biology",
-        "Prg_lang": "Python"
-    }
+        "slack_username": "Aparna",
+        "email": "aparna2118@gmail.com",
+        "hobby": "Badminton",
+        "country": "India",
+        "discipline": "Molecular biology",
+        "programming_language": "Python"
+    },
+"Maher Tantouch": {
+        "slack_username": "maher",
+        "email": "maher.tantouch@gmail.com",
+        "hobby": "Cinema",
+        "country": "Tunisian",
+        "discipline": "Biology",
+        "programming_language": "Python"
+    },
+"Eseohe Ugbeva": {
+        "slack_username": " eseohe",
+        "email": "eseoheugbeva@gmail.com",
+        "hobby": "Baking",
+        "country": "Nigeria",
+        "discipline": "Biochemistry",
+        "programming_language": "Python"
+    },
+"Muhsinah": {
+        "slack_username": "Muhsinah",
+        "email": "muhsinahabdulwasiu@gmail.com",
+        "hobby": "Traveling ",
+        "country": "Nigeria ",
+        "discipline": "pharmacy ",
+        "programming_language": "R"
+    },
+"Rayan Ahmed ": {
+       "slack_username": "royal.ram16",
+       "email": "royal.ram16@gmail.com",
+       "hobby": "Wanderlust ",
+       "country": "UK",
+       "discipline": "Bioinformatics",
+       "programming_language": "Python"
+   }
   }
 print(team_threonine)
