@@ -1,43 +1,176 @@
 team_threonine = {
+
     "Aparna Padmanabhan": {
+
         "slack_username": "Aparna",
+
         "email": "aparna2118@gmail.com",
+
         "hobby": "Badminton",
+
         "country": "India",
+
         "discipline": "Molecular biology",
+
         "programming_language": "Python"
+
     },
-"Maher Tantouch": {
+
+    "Maher Tantouch": {
+
         "slack_username": "maher",
+
         "email": "maher.tantouch@gmail.com",
+
         "hobby": "Cinema",
+
         "country": "Tunisian",
+
         "discipline": "Biology",
+
         "programming_language": "Python"
+
     },
-"Eseohe Ugbeva": {
-        "slack_username": " eseohe",
+
+    "Eseohe Ugbeva": {
+
+        "slack_username": "eseohe",
+
         "email": "eseoheugbeva@gmail.com",
+
         "hobby": "Baking",
+
         "country": "Nigeria",
+
         "discipline": "Biochemistry",
+
         "programming_language": "Python"
+
     },
-"Muhsinah": {
+
+    "Muhsinah": {
+
         "slack_username": "Muhsinah",
+
         "email": "muhsinahabdulwasiu@gmail.com",
-        "hobby": "Traveling ",
-        "country": "Nigeria ",
-        "discipline": "pharmacy ",
+
+        "hobby": "Traveling",
+
+        "country": "Nigeria",
+
+        "discipline": "Pharmacy",
+
         "programming_language": "R"
+
     },
-"Rayan Ahmed ": {
-       "slack_username": "royal.ram16",
-       "email": "royal.ram16@gmail.com",
-       "hobby": "Wanderlust ",
-       "country": "UK",
-       "discipline": "Bioinformatics",
-       "programming_language": "Python"
-   }
-  }
-print(team_threonine)
+
+    "Rayan Ahmed": {
+
+        "slack_username": "royal.ram16",
+
+        "email": "royal.ram16@gmail.com",
+
+        "hobby": "Wanderlust",
+
+        "country": "UK",
+
+        "discipline": "Bioinformatics",
+
+        "programming_language": "Python"
+
+    }
+
+
+}
+
+
+print(
+    "HackBio Internship: Stage0 \n" + "\n"
+
+    "Team Threonine Members:\n" + "\n"
+
+    "Name: Aparna Padmanabhan\n"
+
+    f"Slack Username: {team_threonine['Aparna Padmanabhan']['slack_username']}\n"
+
+    f"Email: {team_threonine['Aparna Padmanabhan']['email']}\n"
+
+    f"Hobby: {team_threonine['Aparna Padmanabhan']['hobby']}\n"
+
+    f"Country: {team_threonine['Aparna Padmanabhan']['country']}\n"
+
+    f"Discipline: {team_threonine['Aparna Padmanabhan']['discipline']}\n"
+
+    f"Preferred Programming Language: {team_threonine['Aparna Padmanabhan']['programming_language']}\n\n"
+#Github @
+
+
+    "Name: Maher Tantouch\n"
+
+    f"Slack Username: {team_threonine['Maher Tantouch']['slack_username']}\n"
+
+    f"Email: {team_threonine['Maher Tantouch']['email']}\n"
+
+    f"Hobby: {team_threonine['Maher Tantouch']['hobby']}\n"
+
+    f"Country: {team_threonine['Maher Tantouch']['country']}\n"
+
+    f"Discipline: {team_threonine['Maher Tantouch']['discipline']}\n"
+
+    f"Preferred Programming Language: {team_threonine['Maher Tantouch']['programming_language']}\n\n"
+#Github @
+
+
+    "Name: Eseohe Ugbeva\n"
+
+    f"Slack Username: {team_threonine['Eseohe Ugbeva']['slack_username']}\n"
+
+    f"Email: {team_threonine['Eseohe Ugbeva']['email']}\n"
+
+    f"Hobby: {team_threonine['Eseohe Ugbeva']['hobby']}\n"
+
+    f"Country: {team_threonine['Eseohe Ugbeva']['country']}\n"
+
+    f"Discipline: {team_threonine['Eseohe Ugbeva']['discipline']}\n"
+
+    f"Preferred Programming Language: {team_threonine['Eseohe Ugbeva']['programming_language']}\n\n"
+#Github @Eseohe
+
+
+    "Name: Muhsinah\n"
+
+    f"Slack Username: {team_threonine['Muhsinah']['slack_username']}\n"
+
+    f"Email: {team_threonine['Muhsinah']['email']}\n"
+
+    f"Hobby: {team_threonine['Muhsinah']['hobby']}\n"
+
+    f"Country: {team_threonine['Muhsinah']['country']}\n"
+
+    f"Discipline: {team_threonine['Muhsinah']['discipline']}\n"
+
+    f"Preferred Programming Language: {team_threonine['Muhsinah']['programming_language']}\n\n"
+#Github @Muhsinah
+
+
+    "Name: Rayan Ahmed\n"
+
+    f"Slack Username: {team_threonine['Rayan Ahmed']['slack_username']}\n"
+
+    f"Email: {team_threonine['Rayan Ahmed']['email']}\n"
+
+    f"Hobby: {team_threonine['Rayan Ahmed']['hobby']}\n"
+
+    f"Country: {team_threonine['Rayan Ahmed']['country']}\n"
+
+    f"Discipline: {team_threonine['Rayan Ahmed']['discipline']}\n"
+
+    f"Preferred Programming Language: {team_threonine['Rayan Ahmed']['programming_language']}\n\n"
+#Github @royalseeker
+
+
+)
+
+#Link to Post on platform
+#LinkedIn:
+#Twitter:
