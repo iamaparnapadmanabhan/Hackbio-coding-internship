@@ -75,6 +75,40 @@ def print_growth_curves(data):
 data = generate_growth_data()
 print_growth_curves(data)
 
+#Question 3:A function for determining the time to reach 80% of the maximum growth
+
+def log(x):
+    """ Natural logarithm approximation using Newton's method """
+    if x <= 0:
+        raise ValueError("Logarithm undefined for non-positive values.")
+    
+    n = 10  
+    y = (x - 1) / (x + 1)
+    result = 2 * y
+
+    for i in range(1, n + 1):
+        result += 2 * (y ** (2 * i + 1)) / (2 * i + 1)
+    return result
+    
+def time_to_reach_80_percent(K, P0, r):
+    """
+    Calculate the time required to reach 80% of the carrying capacity.
+    Parameters:
+    K  (float): Carrying capacity
+    P0 (float): Initial population size
+    r  (float): Growth rate
+    """
+    P_target = 0.8 * K  
+    if P0 <= 0 or K <= P0 or r <= 0:
+        raise ValueError("Ensure that K > P0 > 0 and r > 0.")
+    t = log((K - P0) / (P_target - P0)) / r
+    return t
+K = 1000  
+P0 = 50   
+r = 0.1   
+t_80 = time_to_reach_80_percent(K, P0, r)
+print(f"Time to reach 80% of carrying capacity: {t_80:.2f} units")
+
 #Question 4 : Hamming distance
 
 def hamming_distance(slack_username, twitter_handle):
