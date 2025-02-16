@@ -1,3 +1,4 @@
+#Question 1 : translating DNA to protein
 codon_table = {
     'ATA':'I', 'ATC':'I', 'ATT':'I', 'ATG':'M',
     'ACA':'T', 'ACC':'T', 'ACG':'T', 'ACT':'T',
@@ -27,3 +28,88 @@ dna_sequence = "ATGGCCATTGTAATGGGCCGCTGAAAGGGTGCCCGATAG"
 protein = translate_dna_to_protein(dna_sequence)
 print(f"DNA Sequence: {dna_sequence}")
 print(f"Protein Sequence: {protein}")
+
+#Question 2: Function that simulates and generates a logistic population growth curve.
+
+def logistic_growth(time_steps, carrying_capacity, initial_population, growth_rate, lag_range, exp_range):
+    population = initial_population
+    curve = []
+    lag_phase = (lag_range[0] + (lag_range[1] - lag_range[0]) // 2)  
+    exp_phase = (exp_range[0] + (exp_range[1] - exp_range[0]) // 2)  
+    for t in range(time_steps):
+        if t < lag_phase:
+            
+            population += 0.01 * initial_population
+        elif t < lag_phase + exp_phase:
+           
+            population = population + growth_rate * population * (1 - population / carrying_capacity)
+        else:
+            
+            population = carrying_capacity if population > carrying_capacity else population
+        
+        curve.append((t, population))
+    
+    return curve
+
+def generate_growth_data(num_curves=100, time_steps=100):
+    dataset = []
+    for i in range(num_curves):
+        carrying_capacity = 3000 + i * 10  
+        initial_population = 5 + (i % 5)  
+        growth_rate = 0.3 + (i % 3) * 0.05  
+        lag_range = (5 + (i % 3), 15 + (i % 4))  
+        exp_range = (10 + (i % 4), 30 + (i % 5)) 
+        
+        growth_curve = logistic_growth(time_steps, carrying_capacity, initial_population, growth_rate, lag_range, exp_range)
+        dataset.append({"curve_id": i + 1, "data": growth_curve})
+    
+    return dataset
+
+def print_growth_curves(data):
+    for curve in data:
+        print(f"Curve ID: {curve['curve_id']}")
+        for t, population in curve["data"]:  
+            print(f"Time: {t}, Population: {population:.2f}")
+        print("-----------------------------")
+
+data = generate_growth_data()
+print_growth_curves(data)
+
+#Question 4 : Hamming distance
+
+def hamming_distance(slack_username, twitter_handle):
+
+  #slack_username = "slack_username"
+  #twitter_handle = "twitter_handle"
+
+  #Completion if length difference
+  hamming_distance = 0
+  if len(slack_username) == len(twitter_handle):
+    for i, j in zip (slack_username, twitter_handle):
+      if i != j :
+        hamming_distance = hamming_distance + 1
+    print(f"The hamming distance between the slack username and the twitter handle is : {hamming_distance}.")
+
+  elif len(slack_username) > len(twitter_handle):
+    diff = len(slack_username) - len(twitter_handle)
+    for i in range(diff):
+      twitter_handle = twitter_handle + " "
+    for i, j in zip (slack_username, twitter_handle):
+      if i != j :
+        hamming_distance = hamming_distance + 1
+    print(f"The hamming distance between the slack username and the twitter handle is : {hamming_distance}.")
+
+  elif len(twitter_handle) > len(slack_username):
+    diff2 = len(twitter_handle) - len(slack_username)
+    for i in range (diff2):
+      slack_username = slack_username + " "
+    for i, j in zip (slack_username, twitter_handle):
+      if i != j :
+        hamming_distance = hamming_distance + 1
+    print(f"The hamming distance between the slack username and the twitter handle is : {hamming_distance}.")
+
+
+
+#Test
+slack_username, twitter_handle = "aparna", "aparnapofficial"
+hamming_distance(slack_username, twitter_handle)
